@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient( 100deg,rgb(80, 0, 0), blue, rgb(65, 25, 129));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.mc-head{
+    height: 6vh;
+    width: 45vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.main-container{
+  width: 90%;
+  max-width: 600px;
+  height: auto; /* let content determine height */
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.main-container h2{
+    padding-left: 5vh;
+    margin-top: 1rem;
+}
+/** .inputs-container**/
+.inputs-container{
+    margin-top: 3vh;
+    height: 5vh;
+    width: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inputs{
+    background-color: rgb(230, 230, 230);
+    width: 30rem; 
+    height: 5vh;
+    border-radius: 50vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+.in{
+    width: 13rem;
+    border:none;
+    border-radius: 50vh;
+    padding-left: 3vh;
+    outline: none;
+    background: transparent;
+}
+.task-add{
+    width: 5em;
+    border-radius: 50vh;
+    border:none;
+    background-color: rgb(255, 185, 56);
+    cursor: pointer;
+    outline: none;
+}
+.task-add:hover {
+  background-color: #ffa726;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.task input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color:  #ffa726;
+}
+.task label {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+
+/**task container**/
+
+.task-display {
+  flex: 1;
+  max-height: 30vh;
+  overflow-y: auto;
+  margin-top: 1rem;
+}
+
+.task-container{
+    margin: 3vh;
+    padding-left: 10px;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    width: 45vh;
+}
+.remove{
+    height: 3vh;
+    width: 5em;
+    background: transparent;
+    border: none;
+    opacity: 0.6;
+    transition: 0.2s ease;
+    font-size: 10px;
+}
+
+.remove:hover{
+    opacity: 1;
+    color: red;
+}
